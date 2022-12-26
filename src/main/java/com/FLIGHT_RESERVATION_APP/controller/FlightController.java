@@ -28,6 +28,8 @@ public class FlightController {
 		return "displayFlights";
 	}
 	
+	// completing user reservation
+	
 	@RequestMapping("/showCompleteReservation")
 	public String showCompleteReservation(@RequestParam("flightId") Long flightId, ModelMap modelMap) {
 		Optional<Flight> findById = flightRepo.findById(flightId);
